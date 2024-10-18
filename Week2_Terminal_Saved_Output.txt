@@ -1,0 +1,110 @@
+Last login: Fri Oct 18 11:59:06 on ttys002
+(base) roisinmccague@dyn-49-127-22-222 ~ % cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJjg8qvZRNKFHBt2+6so0n/b3kuoUqN8YSsYloyuAD/d roisin.mccague1@monash.edu
+(base) roisinmccague@dyn-49-127-22-222 ~ % eval "$(ssh-agent -S)"
+ssh-agent: illegal option -- S
+usage: ssh-agent [-c | -s] [-Dd] [-a bind_address] [-E fingerprint_hash]
+                 [-O option] [-P allowed_providers] [-t life]
+       ssh-agent [-a bind_address] [-E fingerprint_hash] [-O option]
+                 [-P allowed_providers] [-t life] command [arg ...]
+       ssh-agent [-c | -s] -k
+(base) roisinmccague@dyn-49-127-22-222 ~ % eval "$(ssh-agent -s)"
+Agent pid 1984
+(base) roisinmccague@dyn-49-127-22-222 ~ % open ~/.ssh/config
+The file /Users/roisinmccague/.ssh/config does not exist.
+(base) roisinmccague@dyn-49-127-22-222 ~ % touch ~/.ssh/config
+(base) roisinmccague@dyn-49-127-22-222 ~ % open ~/.ssh/config
+(base) roisinmccague@dyn-49-127-22-222 ~ % ssh-add ~/.ssh/id_ed25519
+Identity added: /Users/roisinmccague/.ssh/id_ed25519 (roisin.mccague1@monash.edu)
+(base) roisinmccague@dyn-49-127-22-222 ~ % git clone git@github.com:RoisinMcC/python-bootcamp.git
+Cloning into 'python-bootcamp'...
+The authenticity of host 'github.com (4.237.22.38)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+warning: You appear to have cloned an empty repository.
+(base) roisinmccague@dyn-49-127-22-222 python-bootcamp % git add .                        
+(base) roisinmccague@dyn-49-127-22-222 python-bootcamp % git commit
+[main (root-commit) e6cce8c] 	new file:   MIPS coding bootcamp.ipynb 	new file:   Week_02.ipynb
+ Committer: Róisín McCague <roisinmccague@dyn-49-127-22-222.its.monash.edu.au>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 1220 insertions(+)
+ create mode 100644 MIPS coding bootcamp.ipynb
+ create mode 100644 Week_02.ipynb
+(base) roisinmccague@dyn-49-127-22-222 python-bootcamp % git pull
+Your configuration specifies to merge with the ref 'refs/heads/main'
+from the remote, but no such ref was fetched.
+(base) roisinmccague@dyn-49-127-22-222 python-bootcamp % git add .
+(base) roisinmccague@dyn-49-127-22-222 python-bootcamp % get commit
+zsh: command not found: get
+(base) roisinmccague@dyn-49-127-22-222 python-bootcamp % git commit
+On branch main
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+(base) roisinmccague@dyn-49-127-22-222 python-bootcamp % cd python-bootcamp
+cd: no such file or directory: python-bootcamp
+(base) roisinmccague@dyn-49-127-22-222 python-bootcamp % git commit --amend --reset-author
+hint: Waiting for your editor to close the file... error: There was a problem with the editor 'vi'.
+Please supply the message using either -m or -F option.
+(base) roisinmccague@dyn-49-127-22-222 python-bootcamp % git commit --amend --reset-author
+[main b4b84c2] 	new file:   MIPS coding bootcamp.ipynb 	new file:   Week_02.ipynb
+ Committer: Róisín McCague <roisinmccague@dyn-49-127-22-222.its.monash.edu.au>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 1220 insertions(+)
+ create mode 100644 MIPS coding bootcamp.ipynb
+ create mode 100644 Week_02.ipynb
+(base) roisinmccague@dyn-49-127-22-222 python-bootcamp % git commit --amend --reset-author
+[main 8fae69c] 	new file:   MIPS coding bootcamp.ipynb 	new file:   Week_02.ipynb
+ Committer: Róisín McCague <roisinmccague@dyn-49-127-22-222.its.monash.edu.au>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 1220 insertions(+)
+ create mode 100644 MIPS coding bootcamp.ipynb
+ create mode 100644 Week_02.ipynb
+(base) roisinmccague@dyn-49-127-22-222 python-bootcamp % git commit -c "First code commit"
+fatal: could not lookup commit First code commit
+(base) roisinmccague@dyn-49-127-22-222 python-bootcamp % git push 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 5.16 KiB | 2.58 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:RoisinMcC/python-bootcamp.git
+ * [new branch]      main -> main
+(base) roisinmccague@dyn-49-127-22-222 python-bootcamp %  
