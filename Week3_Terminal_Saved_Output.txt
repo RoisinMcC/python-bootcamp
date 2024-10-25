@@ -1,0 +1,120 @@
+Last login: Fri Oct 25 10:58:20 on ttys000
+(base) roisinmccague@dyn-49-127-9-160 ~ % ssh ai_crew@130.194.216.51
+The authenticity of host '130.194.216.51 (130.194.216.51)' can't be established.
+ED25519 key fingerprint is SHA256:k5HG/3qmZFQhvaSfOLRzu1IRLJjvXh668iUFZg6pCxk.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '130.194.216.51' (ED25519) to the list of known hosts.
+ai_crew@130.194.216.51's password: 
+Last login: Fri Oct 25 11:11:28 2024 from 49.127.18.60
+ai_crew@mbelouso-workstation:~$ pwd
+/home/ai_crew
+ai_crew@mbelouso-workstation:~$ ls
+hello
+ai_crew@mbelouso-workstation:~$ ls -rtlah
+total 56K
+drwxr-xr-x 6 root    root    4.0K Oct 17 14:41 ..
+-rw-r--r-- 1 ai_crew ai_crew  807 Oct 17 14:41 .profile
+-rw-r--r-- 1 ai_crew ai_crew  516 Oct 17 14:41 .gtkrc-xfce
+-rw-r--r-- 1 ai_crew ai_crew   22 Oct 17 14:41 .gtkrc-2.0
+-rw-r--r-- 1 ai_crew ai_crew 3.7K Oct 17 14:41 .bashrc
+-rw-r--r-- 1 ai_crew ai_crew  220 Oct 17 14:41 .bash_logout
+drwxr-xr-x 6 ai_crew ai_crew 4.0K Oct 17 14:42 .config
+drwx------ 3 ai_crew ai_crew 4.0K Oct 17 14:42 .cache
+drwxrwxr-x 3 ai_crew ai_crew 4.0K Oct 25 11:12 .local
+drwxrwxr-x 3 ai_crew ai_crew 4.0K Oct 25 11:12 hello
+-rw------- 1 ai_crew ai_crew   20 Oct 25 11:12 .lesshst
+-rw-rw-r-- 1 ai_crew ai_crew    0 Oct 25 11:17 hello_Matt_I_trolled_you.txt
+drwxrwxr-x 2 ai_crew ai_crew 4.0K Oct 25 11:17 mips_coding
+drwxr-x--- 7 ai_crew ai_crew 4.0K Oct 25 11:17 .
+-rw------- 1 ai_crew ai_crew   49 Oct 25 11:17 .bash_history
+ai_crew@mbelouso-workstation:~$ ls
+hello  hello_Matt_I_trolled_you.txt  mips_coding
+ai_crew@mbelouso-workstation:~$ cd hello/
+ai_crew@mbelouso-workstation:~/hello$ pwd
+/home/ai_crew/hello
+ai_crew@mbelouso-workstation:~/hello$ ls
+helloeveryone.txt  HI_guys
+ai_crew@mbelouso-workstation:~/hello$ mkdir roisin
+ai_crew@mbelouso-workstation:~/hello$ ls
+abbey     cathy    EZ      helloeveryone.txt  matt      parisa   Ximo
+alice     domi     fart    HI_guys            matt1     Raquel
+andres    Elaine   grace   Lauren             matt_ex   roisin
+b0n3Kn33  evgenia  haiyin  liu                not_matt  Surafel
+ai_crew@mbelouso-workstation:~/hello$ cd roisin
+ai_crew@mbelouso-workstation:~/hello/roisin$ pwd
+/home/ai_crew/hello/roisin
+ai_crew@mbelouso-workstation:~/hello/roisin$ touch test.text
+ai_crew@mbelouso-workstation:~/hello/roisin$ ls
+test.text
+ai_crew@mbelouso-workstation:~/hello/roisin$ ls rtlah
+ls: cannot access 'rtlah': No such file or directory
+ai_crew@mbelouso-workstation:~/hello/roisin$ ls -rtlah
+total 8.0K
+-rw-rw-r--  1 ai_crew ai_crew    0 Oct 25 11:23 test.text
+drwxrwxr-x  2 ai_crew ai_crew 4.0K Oct 25 11:23 .
+drwxrwxr-x 34 ai_crew ai_crew 4.0K Oct 25 11:23 ..
+ai_crew@mbelouso-workstation:~/hello/roisin$ touch test1.txt
+ai_crew@mbelouso-workstation:~/hello/roisin$ ls -rtlah
+total 8.0K
+-rw-rw-r--  1 ai_crew ai_crew    0 Oct 25 11:23 test.text
+drwxrwxr-x 34 ai_crew ai_crew 4.0K Oct 25 11:23 ..
+-rw-rw-r--  1 ai_crew ai_crew    0 Oct 25 11:24 test1.txt
+drwxrwxr-x  2 ai_crew ai_crew 4.0K Oct 25 11:24 .
+ai_crew@mbelouso-workstation:~/hello/roisin$ who >> test1.txt
+ai_crew@mbelouso-workstation:~/hello/roisin$ ls -rtlah
+total 12K
+-rw-rw-r--  1 ai_crew ai_crew    0 Oct 25 11:23 test.text
+drwxrwxr-x  2 ai_crew ai_crew 4.0K Oct 25 11:24 .
+drwxrwxr-x 34 ai_crew ai_crew 4.0K Oct 25 11:24 ..
+-rw-rw-r--  1 ai_crew ai_crew 1.9K Oct 25 11:25 test1.txt
+ai_crew@mbelouso-workstation:~/hello/roisin$ cat test1.txt
+mbelouso tty7         2024-10-23 12:39 (:0)
+ai_crew  pts/4        2024-10-25 11:09 (49.127.68.152)
+ai_crew  pts/5        2024-10-25 11:09 (49.127.34.100)
+ai_crew  pts/6        2024-10-25 11:10 (49.127.38.182)
+ai_crew  pts/7        2024-10-25 11:10 (49.127.87.62)
+ai_crew  pts/8        2024-10-25 11:10 (49.127.82.21)
+ai_crew  pts/9        2024-10-25 11:10 (49.127.57.147)
+ai_crew  pts/10       2024-10-25 11:10 (49.127.17.202)
+ai_crew  pts/11       2024-10-25 11:10 (49.127.48.150)
+ai_crew  pts/12       2024-10-25 11:10 (49.127.8.196)
+ai_crew  pts/13       2024-10-25 11:10 (49.127.42.45)
+ai_crew  pts/14       2024-10-25 11:11 (49.127.35.239)
+ai_crew  pts/15       2024-10-25 11:11 (49.127.46.187)
+ai_crew  pts/16       2024-10-25 11:11 (49.127.66.132)
+ai_crew  pts/17       2024-10-25 11:11 (49.127.44.243)
+ai_crew  pts/18       2024-10-25 11:11 (49.127.52.130)
+ai_crew  pts/19       2024-10-25 11:11 (49.127.14.53)
+ai_crew  pts/20       2024-10-25 11:11 (49.127.18.60)
+ai_crew  pts/21       2024-10-25 11:11 (49.127.9.160)
+ai_crew  pts/22       2024-10-25 11:11 (49.127.63.81)
+ai_crew  pts/23       2024-10-25 11:11 (49.127.19.229)
+ai_crew  pts/24       2024-10-25 11:11 (49.127.90.177)
+ai_crew  pts/25       2024-10-25 11:11 (49.127.29.158)
+ai_crew  pts/26       2024-10-25 11:11 (49.127.17.159)
+ai_crew  pts/27       2024-10-25 11:11 (49.127.74.243)
+ai_crew  pts/28       2024-10-25 11:11 (49.127.95.182)
+ai_crew  pts/29       2024-10-25 11:12 (49.127.94.165)
+ai_crew  pts/30       2024-10-25 11:12 (49.127.12.96)
+ai_crew  pts/31       2024-10-25 11:13 (49.127.99.42)
+ai_crew  pts/32       2024-10-25 11:13 (49.127.8.11)
+ai_crew  pts/33       2024-10-25 11:13 (49.127.99.44)
+ai_crew  pts/34       2024-10-25 11:14 (49.127.17.49)
+ai_crew  pts/35       2024-10-25 11:20 (49.127.23.147)
+ai_crew  pts/36       2024-10-25 11:15 (49.127.39.85)
+ai_crew@mbelouso-workstation:~/hello/roisin$ ls -rtalh
+total 12K
+-rw-rw-r--  1 ai_crew ai_crew    0 Oct 25 11:23 test.text
+drwxrwxr-x  2 ai_crew ai_crew 4.0K Oct 25 11:24 .
+-rw-rw-r--  1 ai_crew ai_crew 1.9K Oct 25 11:25 test1.txt
+drwxrwxr-x 35 ai_crew ai_crew 4.0K Oct 25 11:26 ..
+ai_crew@mbelouso-workstation:~/hello/roisin$ who >> test.text
+ai_crew@mbelouso-workstation:~/hello/roisin$ ls -rtalh
+total 16K
+drwxrwxr-x  2 ai_crew ai_crew 4.0K Oct 25 11:24 .
+-rw-rw-r--  1 ai_crew ai_crew 1.9K Oct 25 11:25 test1.txt
+drwxrwxr-x 35 ai_crew ai_crew 4.0K Oct 25 11:26 ..
+-rw-rw-r--  1 ai_crew ai_crew 1.8K Oct 25 11:27 test.text
+ai_crew@mbelouso-workstation:~/hello/roisin$ less test1.txt
+ai_crew@mbelouso-workstation:~/hello/roisin$ 
