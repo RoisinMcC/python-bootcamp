@@ -1,0 +1,421 @@
+Last login: Fri Nov  1 10:29:26 on ttys002
+(base) roisinmccague@dyn-49-127-9-160 ~ % ssh ai_crew@130.194.216.51
+ai_crew@130.194.216.51's password: 
+Last login: Fri Nov  1 12:13:25 2024 from 49.127.4.214
+ai_crew@mbelouso-workstation:~$ cd bootcamp/mccague_roisin
+ai_crew@mbelouso-workstation:~/bootcamp/mccague_roisin$ pwd
+/home/ai_crew/bootcamp/mccague_roisin
+ai_crew@mbelouso-workstation:~/bootcamp/mccague_roisin$ ls
+wk_4.txt
+ai_crew@mbelouso-workstation:~/bootcamp/mccague_roisin$ exit
+logout
+Connection to 130.194.216.51 closed.
+(base) roisinmccague@dyn-49-127-9-160 ~ % scp -v ai_crew@130.194.216.51:~/mccague_roisin/wk_4.txt .
+Executing: program /usr/bin/ssh host 130.194.216.51, user ai_crew, command sftp
+OpenSSH_9.6p1, LibreSSL 3.3.6
+debug1: Reading configuration data /Users/roisinmccague/.ssh/config
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 21: include /etc/ssh/ssh_config.d/* matched no files
+debug1: /etc/ssh/ssh_config line 54: Applying options for *
+debug1: /etc/ssh/ssh_config line 58: Applying options for *
+debug1: Authenticator provider $SSH_SK_PROVIDER did not resolve; disabling
+debug1: Connecting to 130.194.216.51 [130.194.216.51] port 22.
+debug1: Connection established.
+debug1: identity file /Users/roisinmccague/.ssh/id_rsa type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_rsa-cert type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_ecdsa type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_ecdsa-cert type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_ecdsa_sk type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_ecdsa_sk-cert type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_ed25519 type 3
+debug1: identity file /Users/roisinmccague/.ssh/id_ed25519-cert type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_ed25519_sk type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_ed25519_sk-cert type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_xmss type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_xmss-cert type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_dsa type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_dsa-cert type -1
+debug1: Local version string SSH-2.0-OpenSSH_9.6
+debug1: Remote protocol version 2.0, remote software version OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+debug1: compat_banner: match: OpenSSH_8.9p1 Ubuntu-3ubuntu0.10 pat OpenSSH* compat 0x04000000
+debug1: Authenticating to 130.194.216.51:22 as 'ai_crew'
+debug1: load_hostkeys: fopen /Users/roisinmccague/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug1: kex: algorithm: sntrup761x25519-sha512@openssh.com
+debug1: kex: host key algorithm: ssh-ed25519
+debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: SSH2_MSG_KEX_ECDH_REPLY received
+debug1: Server host key: ssh-ed25519 SHA256:k5HG/3qmZFQhvaSfOLRzu1IRLJjvXh668iUFZg6pCxk
+debug1: load_hostkeys: fopen /Users/roisinmccague/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug1: Host '130.194.216.51' is known and matches the ED25519 host key.
+debug1: Found key in /Users/roisinmccague/.ssh/known_hosts:4
+debug1: ssh_packet_send2_wrapped: resetting send seqnr 3
+debug1: rekey out after 134217728 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: ssh_packet_read_poll2: resetting read seqnr 3
+debug1: SSH2_MSG_NEWKEYS received
+debug1: rekey in after 134217728 blocks
+debug1: SSH2_MSG_EXT_INFO received
+debug1: kex_ext_info_client_parse: server-sig-algs=<ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com>
+debug1: kex_ext_info_check_ver: publickey-hostbound@openssh.com=<0>
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug1: Authentications that can continue: publickey,password
+debug1: Next authentication method: publickey
+debug1: get_agent_identities: bound agent to hostkey
+debug1: get_agent_identities: ssh_fetch_identitylist: agent contains no identities
+debug1: Will attempt key: /Users/roisinmccague/.ssh/id_rsa 
+debug1: Will attempt key: /Users/roisinmccague/.ssh/id_ecdsa 
+debug1: Will attempt key: /Users/roisinmccague/.ssh/id_ecdsa_sk 
+debug1: Will attempt key: /Users/roisinmccague/.ssh/id_ed25519 ED25519 SHA256:ob36xR0/71wBgeDT1zE3+j/dNAB60pD5FVfhkNDbXzc
+debug1: Will attempt key: /Users/roisinmccague/.ssh/id_ed25519_sk 
+debug1: Will attempt key: /Users/roisinmccague/.ssh/id_xmss 
+debug1: Will attempt key: /Users/roisinmccague/.ssh/id_dsa 
+debug1: Trying private key: /Users/roisinmccague/.ssh/id_rsa
+debug1: Trying private key: /Users/roisinmccague/.ssh/id_ecdsa
+debug1: Trying private key: /Users/roisinmccague/.ssh/id_ecdsa_sk
+debug1: Offering public key: /Users/roisinmccague/.ssh/id_ed25519 ED25519 SHA256:ob36xR0/71wBgeDT1zE3+j/dNAB60pD5FVfhkNDbXzc
+debug1: Authentications that can continue: publickey,password
+debug1: Trying private key: /Users/roisinmccague/.ssh/id_ed25519_sk
+debug1: Trying private key: /Users/roisinmccague/.ssh/id_xmss
+debug1: Trying private key: /Users/roisinmccague/.ssh/id_dsa
+debug1: Next authentication method: password
+ai_crew@130.194.216.51's password: 
+Authenticated to 130.194.216.51 ([130.194.216.51]:22) using "password".
+debug1: channel 0: new session [client-session] (inactive timeout: 0)
+debug1: Requesting no-more-sessions@openssh.com
+debug1: Entering interactive session.
+debug1: pledge: filesystem
+debug1: client_input_global_request: rtype hostkeys-00@openssh.com want_reply 0
+debug1: client_input_hostkeys: searching /Users/roisinmccague/.ssh/known_hosts for 130.194.216.51 / (none)
+debug1: client_input_hostkeys: searching /Users/roisinmccague/.ssh/known_hosts2 for 130.194.216.51 / (none)
+debug1: client_input_hostkeys: hostkeys file /Users/roisinmccague/.ssh/known_hosts2 does not exist
+debug1: client_input_hostkeys: no new or deprecated keys from server
+debug1: Sending environment.
+debug1: channel 0: setting env LANG = "en_AU.UTF-8"
+debug1: Sending subsystem: sftp
+debug1: pledge: fork
+scp: debug1: stat remote: No such file or directory
+scp: debug1: stat remote: No such file or directory
+scp: debug1: stat remote: No such file or directory
+scp: ~/mccague_roisin/wk_4.txt: No such file or directory
+debug1: client_input_channel_req: channel 0 rtype exit-status reply 0
+debug1: channel 0: free: client-session, nchannels 1
+Transferred: sent 3608, received 4004 bytes, in 0.1 seconds
+Bytes per second: sent 40989.8, received 45488.6
+debug1: Exit status 0
+(base) roisinmccague@dyn-49-127-9-160 ~ % ls
+20240209_Validation of C and N terminal nk1R antibodies
+Applications
+Creative Cloud Files
+Desktop
+Documents
+Downloads
+Google Drive
+Library
+Movies
+Music
+Pictures
+Public
+ganttproject.log
+installer.log
+java0.log
+opt
+python-bootcamp
+(base) roisinmccague@dyn-49-127-9-160 ~ % scp -v ai_crew@130.194.216.51:~/bootcamp/mccague_roisin/wk_4.txt .
+Executing: program /usr/bin/ssh host 130.194.216.51, user ai_crew, command sftp
+OpenSSH_9.6p1, LibreSSL 3.3.6
+debug1: Reading configuration data /Users/roisinmccague/.ssh/config
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 21: include /etc/ssh/ssh_config.d/* matched no files
+debug1: /etc/ssh/ssh_config line 54: Applying options for *
+debug1: /etc/ssh/ssh_config line 58: Applying options for *
+debug1: Authenticator provider $SSH_SK_PROVIDER did not resolve; disabling
+debug1: Connecting to 130.194.216.51 [130.194.216.51] port 22.
+debug1: Connection established.
+debug1: identity file /Users/roisinmccague/.ssh/id_rsa type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_rsa-cert type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_ecdsa type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_ecdsa-cert type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_ecdsa_sk type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_ecdsa_sk-cert type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_ed25519 type 3
+debug1: identity file /Users/roisinmccague/.ssh/id_ed25519-cert type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_ed25519_sk type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_ed25519_sk-cert type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_xmss type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_xmss-cert type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_dsa type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_dsa-cert type -1
+debug1: Local version string SSH-2.0-OpenSSH_9.6
+debug1: Remote protocol version 2.0, remote software version OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+debug1: compat_banner: match: OpenSSH_8.9p1 Ubuntu-3ubuntu0.10 pat OpenSSH* compat 0x04000000
+debug1: Authenticating to 130.194.216.51:22 as 'ai_crew'
+debug1: load_hostkeys: fopen /Users/roisinmccague/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug1: kex: algorithm: sntrup761x25519-sha512@openssh.com
+debug1: kex: host key algorithm: ssh-ed25519
+debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: SSH2_MSG_KEX_ECDH_REPLY received
+debug1: Server host key: ssh-ed25519 SHA256:k5HG/3qmZFQhvaSfOLRzu1IRLJjvXh668iUFZg6pCxk
+debug1: load_hostkeys: fopen /Users/roisinmccague/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug1: Host '130.194.216.51' is known and matches the ED25519 host key.
+debug1: Found key in /Users/roisinmccague/.ssh/known_hosts:4
+debug1: ssh_packet_send2_wrapped: resetting send seqnr 3
+debug1: rekey out after 134217728 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: ssh_packet_read_poll2: resetting read seqnr 3
+debug1: SSH2_MSG_NEWKEYS received
+debug1: rekey in after 134217728 blocks
+debug1: SSH2_MSG_EXT_INFO received
+debug1: kex_ext_info_client_parse: server-sig-algs=<ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com>
+debug1: kex_ext_info_check_ver: publickey-hostbound@openssh.com=<0>
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug1: Authentications that can continue: publickey,password
+debug1: Next authentication method: publickey
+debug1: get_agent_identities: bound agent to hostkey
+debug1: get_agent_identities: ssh_fetch_identitylist: agent contains no identities
+debug1: Will attempt key: /Users/roisinmccague/.ssh/id_rsa 
+debug1: Will attempt key: /Users/roisinmccague/.ssh/id_ecdsa 
+debug1: Will attempt key: /Users/roisinmccague/.ssh/id_ecdsa_sk 
+debug1: Will attempt key: /Users/roisinmccague/.ssh/id_ed25519 ED25519 SHA256:ob36xR0/71wBgeDT1zE3+j/dNAB60pD5FVfhkNDbXzc
+debug1: Will attempt key: /Users/roisinmccague/.ssh/id_ed25519_sk 
+debug1: Will attempt key: /Users/roisinmccague/.ssh/id_xmss 
+debug1: Will attempt key: /Users/roisinmccague/.ssh/id_dsa 
+debug1: Trying private key: /Users/roisinmccague/.ssh/id_rsa
+debug1: Trying private key: /Users/roisinmccague/.ssh/id_ecdsa
+debug1: Trying private key: /Users/roisinmccague/.ssh/id_ecdsa_sk
+debug1: Offering public key: /Users/roisinmccague/.ssh/id_ed25519 ED25519 SHA256:ob36xR0/71wBgeDT1zE3+j/dNAB60pD5FVfhkNDbXzc
+debug1: Authentications that can continue: publickey,password
+debug1: Trying private key: /Users/roisinmccague/.ssh/id_ed25519_sk
+debug1: Trying private key: /Users/roisinmccague/.ssh/id_xmss
+debug1: Trying private key: /Users/roisinmccague/.ssh/id_dsa
+debug1: Next authentication method: password
+ai_crew@130.194.216.51's password: 
+Authenticated to 130.194.216.51 ([130.194.216.51]:22) using "password".
+debug1: channel 0: new session [client-session] (inactive timeout: 0)
+debug1: Requesting no-more-sessions@openssh.com
+debug1: Entering interactive session.
+debug1: pledge: filesystem
+debug1: client_input_global_request: rtype hostkeys-00@openssh.com want_reply 0
+debug1: client_input_hostkeys: searching /Users/roisinmccague/.ssh/known_hosts for 130.194.216.51 / (none)
+debug1: client_input_hostkeys: searching /Users/roisinmccague/.ssh/known_hosts2 for 130.194.216.51 / (none)
+debug1: client_input_hostkeys: hostkeys file /Users/roisinmccague/.ssh/known_hosts2 does not exist
+debug1: client_input_hostkeys: no new or deprecated keys from server
+debug1: Sending environment.
+debug1: channel 0: setting env LANG = "en_AU.UTF-8"
+debug1: Sending subsystem: sftp
+debug1: pledge: fork
+scp: debug1: Fetching bootcamp/mccague_roisin/wk_4.txt to ./wk_4.txt
+
+wk_4.txt                                                                   100%   72     5.7KB/s   00:00    
+scp: debug1: truncating at 72
+debug1: client_input_channel_req: channel 0 rtype exit-status reply 0
+debug1: channel 0: free: client-session, nchannels 1
+Transferred: sent 3780, received 4216 bytes, in 0.1 seconds
+Bytes per second: sent 34436.0, received 38407.9
+debug1: Exit status 0
+(base) roisinmccague@dyn-49-127-9-160 ~ % ls
+20240209_Validation of C and N terminal nk1R antibodies
+Applications
+Creative Cloud Files
+Desktop
+Documents
+Downloads
+Google Drive
+Library
+Movies
+Music
+Pictures
+Public
+ganttproject.log
+installer.log
+java0.log
+opt
+python-bootcamp
+wk_4.txt
+(base) roisinmccague@dyn-49-127-9-160 ~ % scp -v wk_4.txt ai_crew@130.194.216.51:~/bootcamp/belousoff_matt/
+Executing: program /usr/bin/ssh host 130.194.216.51, user ai_crew, command sftp
+OpenSSH_9.6p1, LibreSSL 3.3.6
+debug1: Reading configuration data /Users/roisinmccague/.ssh/config
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 21: include /etc/ssh/ssh_config.d/* matched no files
+debug1: /etc/ssh/ssh_config line 54: Applying options for *
+debug1: /etc/ssh/ssh_config line 58: Applying options for *
+debug1: Authenticator provider $SSH_SK_PROVIDER did not resolve; disabling
+debug1: Connecting to 130.194.216.51 [130.194.216.51] port 22.
+debug1: Connection established.
+debug1: identity file /Users/roisinmccague/.ssh/id_rsa type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_rsa-cert type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_ecdsa type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_ecdsa-cert type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_ecdsa_sk type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_ecdsa_sk-cert type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_ed25519 type 3
+debug1: identity file /Users/roisinmccague/.ssh/id_ed25519-cert type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_ed25519_sk type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_ed25519_sk-cert type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_xmss type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_xmss-cert type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_dsa type -1
+debug1: identity file /Users/roisinmccague/.ssh/id_dsa-cert type -1
+debug1: Local version string SSH-2.0-OpenSSH_9.6
+debug1: Remote protocol version 2.0, remote software version OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+debug1: compat_banner: match: OpenSSH_8.9p1 Ubuntu-3ubuntu0.10 pat OpenSSH* compat 0x04000000
+debug1: Authenticating to 130.194.216.51:22 as 'ai_crew'
+debug1: load_hostkeys: fopen /Users/roisinmccague/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug1: kex: algorithm: sntrup761x25519-sha512@openssh.com
+debug1: kex: host key algorithm: ssh-ed25519
+debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: SSH2_MSG_KEX_ECDH_REPLY received
+debug1: Server host key: ssh-ed25519 SHA256:k5HG/3qmZFQhvaSfOLRzu1IRLJjvXh668iUFZg6pCxk
+debug1: load_hostkeys: fopen /Users/roisinmccague/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug1: Host '130.194.216.51' is known and matches the ED25519 host key.
+debug1: Found key in /Users/roisinmccague/.ssh/known_hosts:4
+debug1: ssh_packet_send2_wrapped: resetting send seqnr 3
+debug1: rekey out after 134217728 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: ssh_packet_read_poll2: resetting read seqnr 3
+debug1: SSH2_MSG_NEWKEYS received
+debug1: rekey in after 134217728 blocks
+debug1: SSH2_MSG_EXT_INFO received
+debug1: kex_ext_info_client_parse: server-sig-algs=<ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com>
+debug1: kex_ext_info_check_ver: publickey-hostbound@openssh.com=<0>
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug1: Authentications that can continue: publickey,password
+debug1: Next authentication method: publickey
+debug1: get_agent_identities: bound agent to hostkey
+debug1: get_agent_identities: ssh_fetch_identitylist: agent contains no identities
+debug1: Will attempt key: /Users/roisinmccague/.ssh/id_rsa 
+debug1: Will attempt key: /Users/roisinmccague/.ssh/id_ecdsa 
+debug1: Will attempt key: /Users/roisinmccague/.ssh/id_ecdsa_sk 
+debug1: Will attempt key: /Users/roisinmccague/.ssh/id_ed25519 ED25519 SHA256:ob36xR0/71wBgeDT1zE3+j/dNAB60pD5FVfhkNDbXzc
+debug1: Will attempt key: /Users/roisinmccague/.ssh/id_ed25519_sk 
+debug1: Will attempt key: /Users/roisinmccague/.ssh/id_xmss 
+debug1: Will attempt key: /Users/roisinmccague/.ssh/id_dsa 
+debug1: Trying private key: /Users/roisinmccague/.ssh/id_rsa
+debug1: Trying private key: /Users/roisinmccague/.ssh/id_ecdsa
+debug1: Trying private key: /Users/roisinmccague/.ssh/id_ecdsa_sk
+debug1: Offering public key: /Users/roisinmccague/.ssh/id_ed25519 ED25519 SHA256:ob36xR0/71wBgeDT1zE3+j/dNAB60pD5FVfhkNDbXzc
+debug1: Authentications that can continue: publickey,password
+debug1: Trying private key: /Users/roisinmccague/.ssh/id_ed25519_sk
+debug1: Trying private key: /Users/roisinmccague/.ssh/id_xmss
+debug1: Trying private key: /Users/roisinmccague/.ssh/id_dsa
+debug1: Next authentication method: password
+ai_crew@130.194.216.51's password: 
+Authenticated to 130.194.216.51 ([130.194.216.51]:22) using "password".
+debug1: channel 0: new session [client-session] (inactive timeout: 0)
+debug1: Requesting no-more-sessions@openssh.com
+debug1: Entering interactive session.
+debug1: pledge: filesystem
+debug1: client_input_global_request: rtype hostkeys-00@openssh.com want_reply 0
+debug1: client_input_hostkeys: searching /Users/roisinmccague/.ssh/known_hosts for 130.194.216.51 / (none)
+debug1: client_input_hostkeys: searching /Users/roisinmccague/.ssh/known_hosts2 for 130.194.216.51 / (none)
+debug1: client_input_hostkeys: hostkeys file /Users/roisinmccague/.ssh/known_hosts2 does not exist
+debug1: client_input_hostkeys: no new or deprecated keys from server
+debug1: Sending environment.
+debug1: channel 0: setting env LANG = "en_AU.UTF-8"
+debug1: Sending subsystem: sftp
+debug1: pledge: fork
+wk_4.txt                                                                   100%   72    13.6KB/s   00:00    
+scp: debug1: truncating at 72
+debug1: client_input_channel_req: channel 0 rtype exit-status reply 0
+debug1: channel 0: free: client-session, nchannels 1
+Transferred: sent 3776, received 4100 bytes, in 0.1 seconds
+Bytes per second: sent 41624.9, received 45196.5
+debug1: Exit status 0
+(base) roisinmccague@dyn-49-127-9-160 ~ % ssh ai_crew@130.194.216.51
+ai_crew@130.194.216.51's password: 
+Last login: Fri Nov  1 12:23:47 2024 from 49.127.38.182
+ai_crew@mbelouso-workstation:~$ cd bootcamp
+ai_crew@mbelouso-workstation:~/bootcamp$ pwd
+/home/ai_crew/bootcamp
+ai_crew@mbelouso-workstation:~/bootcamp$ ls
+badiee_parisa    ishii_kenta     Liu_Joyce       Minakshi         piper_sarah     sanchis_ximo
+belousoff_matt   Jiang_Elaine    mattr           muller_abbey     sahandi_parham  tegegne_surafel
+Breen_Siobhonne  kreutzer_ethan  mccague_roisin  nettleton_theo   sample.txt      TERRILL_ALICE
+fun_ashleigh     liu_haiyin      mennen_grace    Nguyen_Thi_Thuy  Sanchez_Raquel  text_joyce.txt
+ai_crew@mbelouso-workstation:~/bootcamp$ cd belousoff_matt
+ai_crew@mbelouso-workstation:~/bootcamp/belousoff_matt$ ls
+test.txt  wk_4.txt
+ai_crew@mbelouso-workstation:~/bootcamp/belousoff_matt$ quit
+Command 'quit' not found, did you mean:
+  command 'luit' from deb x11-utils (7.7+5build2)
+  command 'quilt' from deb quilt (0.66-2.1)
+  command 'qgit' from deb qgit (2.10-2)
+  command 'quiz' from deb bsdgames (2.17-29)
+Try: apt install <deb name>
+ai_crew@mbelouso-workstation:~/bootcamp/belousoff_matt$ logout
+Connection to 130.194.216.51 closed.
+(base) roisinmccague@dyn-49-127-9-160 ~ % ls
+20240209_Validation of C and N terminal nk1R antibodies
+Applications
+Creative Cloud Files
+Desktop
+Documents
+Downloads
+Google Drive
+Library
+Movies
+Music
+Pictures
+Public
+ganttproject.log
+installer.log
+java0.log
+opt
+python-bootcamp
+wk_4.txt
+(base) roisinmccague@dyn-49-127-9-160 ~ % mv wk_4.txt ~/python-bootcamp
+(base) roisinmccague@dyn-49-127-9-160 ~ % ls
+20240209_Validation of C and N terminal nk1R antibodies
+Applications
+Creative Cloud Files
+Desktop
+Documents
+Downloads
+Google Drive
+Library
+Movies
+Music
+Pictures
+Public
+ganttproject.log
+installer.log
+java0.log
+opt
+python-bootcamp
+(base) roisinmccague@dyn-49-127-9-160 ~ % cd python-bootcamp
+(base) roisinmccague@dyn-49-127-9-160 python-bootcamp % ls
+MIPS coding bootcamp.ipynb	Week_02.ipynb			wk_4.txt
+Week2_Terminal_Saved_Output.txt	Week_03.ipynb
+Week3_Terminal_Saved_Output.txt	Week_04.ipynb
+(base) roisinmccague@dyn-49-127-9-160 python-bootcamp % cat wk_4.txt
+This is the week four haiku 
+it is not that good
+I'm not good at poetry
+(base) roisinmccague@dyn-49-127-9-160 python-bootcamp % 
